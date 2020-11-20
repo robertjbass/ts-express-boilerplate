@@ -1,5 +1,5 @@
 {
-  "name": "sendgrid-app",
+  "name": "ts-express-app",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
