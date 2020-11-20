@@ -41,8 +41,8 @@ echo ".env" >> .gitignore
 source ./.env
 ```
 
-#### server.ts will automatically be created as follows
-### src/server.ts
+### server.ts will automatically be created as follows
+#### src/server.ts
 ```typescript
 import express from 'express'
 const app = express()
@@ -60,9 +60,9 @@ app.listen(port, () => {
 })
 ```
 ---
-#### Update files
+### Update files
 
-### tsconfig.json
+#### tsconfig.json
 ```json
 ...
   "watch": true
@@ -71,12 +71,18 @@ app.listen(port, () => {
 to tsconfig.json
 
 
-### package.json
+#### package.json
 ```json
 ...
   "scripts": {
     "serve": "concurrently \"nodemon dist/server.js\" \"tsc\""
   },
   ...
+```
+
+
+#### Quick Commit
+```bash
+git add . && git commit -m "quick commit" && git push
 ```
 
